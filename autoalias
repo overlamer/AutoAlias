@@ -1,0 +1,18 @@
+clear
+cyan='\e[0;36m'
+lightgreen='\e[1;32m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+echo -e $lightgreen "\e[1m                AutoAlias для создания сокращений)"
+echo " "
+echo -e $yellow "\e[1m                        By @overlamer2130 "
+echo " "
+echo -e '\e[1;34m\nBведите сокращение комманды\e[31m(например upgr): \n'
+read omg
+echo
+echo -e '\e[1;33m\nBведите комманду,которую хотите сократить\e[33m(например pkg update): \n'
+read command
+echo
+echo alias $omg=\"$command\">>$HOME/.bashrc
+echo "Готово! Перезапусти Termux."
+echo " "
